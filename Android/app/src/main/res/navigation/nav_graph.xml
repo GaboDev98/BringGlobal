@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.gabodev.bringglobal.ui.home.HomeFragment"
+        tools:layout="@layout/home_fragment"
+        android:label="Home">
+
+        <action
+            android:id="@+id/action_citiesFragment_to_cityFragment"
+            app:destination="@id/cityFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/cityFragment"
+        android:name="com.gabodev.bringglobal.ui.city.CityDetailFragment"
+        tools:layout="@layout/city_detail_fragment"
+        android:label="City">
+    </fragment>
+
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="com.gabodev.bringglobal.ui.help.HelpFragment"
+        tools:layout="@layout/help_fragment"
+        android:label="Help">
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.gabodev.bringglobal.ui.settings.SettingsFragment"
+        tools:layout="@layout/settings_fragment"
+        android:label="Settings">
+    </fragment>
+
+</navigation>

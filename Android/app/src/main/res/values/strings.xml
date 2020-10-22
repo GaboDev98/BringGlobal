@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BringGlobal</string>
+    <string name="app_units">metric</string>
+    <string name="app_weather_api_id">c6e381d8c7ff98f0fee43775817cf6ad</string>
+</resources>
